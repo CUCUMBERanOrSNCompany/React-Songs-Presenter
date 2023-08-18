@@ -1,15 +1,17 @@
 // Importing the file system
 const fs = require('fs');
+const path = require('path');
 
-const Song = require('./Song');
+const Song = require('../Entities/Song');
 
-const filePath = 'F-S Test - T02 - 2023 - Song_list.csv';
+const filePath = path.join(__dirname, 'F-S Test - T02 - 2023 - Song_list.csv');
 
 // Reading the file and parse it
 function readFileAndParse() {
     return new Promise((resolve, reject) => {
         fs.readFile(filePath, 'utf8', (err, data) => {
-            if (err) {
+            if (err)
+            {
                 reject(err);
                 return;
             }
@@ -45,10 +47,3 @@ function readFileAndParse() {
 module.exports = {
     readFileAndParse
 };
-
-
-
-
-
-
-

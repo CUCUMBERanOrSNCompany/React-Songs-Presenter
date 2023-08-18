@@ -1,6 +1,6 @@
-const reader = require('./FileReader.js');
+const reader = require('./Model/FileReader');
 
-const DBManager = require('./DBManager.js');
+const DBManager = require('./Controller/DBManager');
 
 async function main()
 {
