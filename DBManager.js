@@ -4,13 +4,14 @@ async function createDatabase()
 {
     const connection = await dataBase.createConnection({
         host: '127.0.0.1',
+        port: 3306,
         user: 'OrSN',
-        password: '0000'
+        password: ''
     });
 
     try
     {
-        // Create the database
+        // Creating a database named SongsDB
         await connection.query('CREATE DATABASE IF NOT EXISTS SongsDB');
         console.log('Database created successfully');
     } catch (error)
