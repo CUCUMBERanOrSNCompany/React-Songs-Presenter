@@ -60,7 +60,7 @@ class DBManager {
         CREATE TABLE IF NOT EXISTS songs (
         id INT AUTO_INCREMENT PRIMARY KEY,
         songName VARCHAR(255) NOT NULL,
-        artist VARCHAR(255) NOT NULL,
+        band VARCHAR(255) NOT NULL,
         year INT NOT NULL
         );
     `   ;
@@ -85,7 +85,7 @@ class DBManager {
         }
 
         const checkQuery = "\
-        SELECT * FROM songs WHERE songName = ? AND artist = ? AND year = ?";
+        SELECT * FROM songs WHERE songName = ? AND band = ? AND year = ?";
 
         const [rows] = await this.connection.query(checkQuery, [song.songName, song.band, song.year]);
 
@@ -93,7 +93,7 @@ class DBManager {
         if (rows.length === 0)
         {
             const insertQuery = "\
-            INSERT INTO songs (songName, artist, year) VALUES (?, ?, ?)";
+            INSERT INTO songs (songName, band, year) VALUES (?, ?, ?)";
 
             await this.connection.query(insertQuery, [song.songName, song.band, song.year]);
 

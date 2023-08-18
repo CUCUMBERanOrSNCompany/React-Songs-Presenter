@@ -36,7 +36,7 @@ async function main()
     // Create the songs table and insert songs
     await dbManager.createSongsTableFromSongsArray(songs);
 
-    //await dbManager.disconnect();
+    await dbManager.disconnect();
 
     //process.exit();
 }

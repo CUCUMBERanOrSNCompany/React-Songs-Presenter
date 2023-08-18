@@ -1,4 +1,4 @@
-// Returning the songs table sorted by band (artist) name, from the DB.
+// Returning the songs table sorted by band name, from the DB.
 
 const express = require('express');
 const router = express.Router();
@@ -13,7 +13,7 @@ router.get('/api/songs', async (req, res) => {
         const connection = await dataBase.createConnection(dbConfig);
 
         // Fetch songs from the "songs" table and sort by band name
-        const query = 'SELECT * FROM songs ORDER BY artist;';
+        const query = 'SELECT * FROM songs ORDER BY band;';
         const [rows] = await connection.query(query);
 
         // Close the connection
