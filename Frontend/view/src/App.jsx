@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     console.log('Fetching songs...');
-    fetch('/api/songs')
+    fetch('http://localhost:3000/api/songs')
         .then(response => {
           console.log('Raw response:', response);
           return response.json();

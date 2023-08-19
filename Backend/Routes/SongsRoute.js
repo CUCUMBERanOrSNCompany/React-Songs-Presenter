@@ -3,7 +3,15 @@
 const express = require('express');
 const router = express.Router();
 const dataBase = require('mysql2/promise');
-const dbConfig = require('../Main');
+//const dbConfig = require('../Main');
+
+const dbConfig = {
+    host: '127.0.0.1',
+    port: 3306,
+    user: 'OrSN',
+    password: '',
+    database: 'SongsDB'
+};
 
 // Define a route to fetch songs from the DB
 router.get('/api/songs', async (req, res) => {

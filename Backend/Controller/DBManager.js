@@ -109,9 +109,8 @@ class DBManager {
     {
         await this.connection.end;
 
-        console.log("Disconnected from the server");
+        console.log("Disconnected from the DB");
     }
-
 
 }
 

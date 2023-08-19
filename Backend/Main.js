@@ -2,6 +2,8 @@ const reader = require('./Model/FileReader');
 
 const DBManager = require('./Controller/DBManager');
 
+const ServerManager = require('./Server/ServerManager');
+
 // Database configuration
 const dbConfig = {
     host: '127.0.0.1',
@@ -38,7 +40,8 @@ async function main()
 
     await dbManager.disconnect();
 
-    //process.exit();
+    const serverManager = new ServerManager();
+    serverManager.startServer();
 }
 
 main();
