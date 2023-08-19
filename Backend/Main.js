@@ -4,17 +4,7 @@ const DBManager = require('./Controller/DBManager');
 
 const ServerManager = require('./Server/ServerManager');
 
-// Database configuration
-const dbConfig = {
-    host: '127.0.0.1',
-    port: 3306,
-    user: 'OrSN',
-    password: '',
-    database: 'SongsDB'
-};
-
-// Exporting the dbConfig for reuse and consistency purposes.
-module.exports = dbConfig;
+const dbConfig = require('./Entities/DBConfig');
 
 
 async function main()
