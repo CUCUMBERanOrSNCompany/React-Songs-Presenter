@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import './Styles.css';
+
 function App() {
   const [songs, setSongs] = useState([]);
 

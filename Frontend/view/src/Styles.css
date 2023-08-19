@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Style for the table */
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #916d27; /* Set border color */
+}
+
+th, td {
+    border: 1px solid #916d27; /* Set border color */
+    padding: 4px;
+    text-align: center;
+    background-color: #c7ddf3;
+    color: #1c1c1c;
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    color: #1c1c1c;
+}
