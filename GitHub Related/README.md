@@ -31,8 +31,6 @@ And that's it! (I hope)
    user: 'OrSN',
    
    password: '', (No Password)
-   
-   database: 'SongsDB'
 
    Alternatively, modify Backend/Entities/DBConfig.js with your credentials.
 
