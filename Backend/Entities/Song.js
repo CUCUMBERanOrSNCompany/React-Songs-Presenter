@@ -1,3 +1,4 @@
+// Defining a song object
 class Song {
     constructor(songName, band, year) {
         this.songName = songName;
