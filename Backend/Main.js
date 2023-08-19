@@ -6,11 +6,12 @@ const ServerManager = require('./Server/ServerManager');
 
 const dbConfig = require('./Entities/DBConfig');
 
-
+// Calling all tasks related to backend
 async function main()
 {
     let songs = [];
 
+    // Reading the songs file
     try
     {
         songs = await reader.readFileAndParse();
@@ -28,8 +29,10 @@ async function main()
     // Create the songs table and insert songs
     await dbManager.createSongsTableFromSongsArray(songs);
 
+    // Disconnecting from the Database, once completed DB related tasks
     await dbManager.disconnect();
 
+    // Setting up the server
     const serverManager = new ServerManager();
     serverManager.startServer();
 }

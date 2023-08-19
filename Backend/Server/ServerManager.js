@@ -3,8 +3,10 @@ const cors = require('cors');
 const songsRoute = require('../routes/songsRoute');
 
 // Defining a class responsible for setting up the server.
-class ServerManager {
-    constructor(dbConfig) {
+class ServerManager
+{
+    constructor(dbConfig)
+    {
         this.app = express();
         this.port = 3000;
 
@@ -14,17 +16,20 @@ class ServerManager {
 
     // To learn more about CORS:
     // https://expressjs.com/en/resources/middleware/cors.html
-    setupMiddlewares() {
+    setupMiddlewares()
+    {
         this.app.use(cors());
     }
 
     // Setting up the route to the Songs fetcher from the DB.
-    setupRoutes() {
+    setupRoutes()
+    {
         this.app.use('/', songsRoute);
     }
 
     // Starting the server.
-    startServer() {
+    startServer()
+    {
         this.app.listen(this.port, () => {
             console.log(`Server is running on port ${this.port}`);
         });

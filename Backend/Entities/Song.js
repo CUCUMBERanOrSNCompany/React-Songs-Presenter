@@ -1,6 +1,8 @@
 // Defining a song object
-class Song {
-    constructor(songName, band, year) {
+class Song
+{
+    constructor(songName, band, year)
+    {
         this.songName = songName;
         this.band = band;
         this.year = year;

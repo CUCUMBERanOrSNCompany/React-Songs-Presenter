@@ -7,7 +7,8 @@ const Song = require('../Entities/Song');
 const filePath = path.join(__dirname, 'F-S Test - T02 - 2023 - Song_list.csv');
 
 // Reading the file and parse it
-function readFileAndParse() {
+function readFileAndParse()
+{
     return new Promise((resolve, reject) => {
         fs.readFile(filePath, 'utf8', (err, data) => {
             if (err)

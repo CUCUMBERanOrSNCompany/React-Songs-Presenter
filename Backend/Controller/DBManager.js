@@ -1,5 +1,6 @@
 const dataBase = require('mysql2/promise');
 
+// Defines the Database interactions
 class DBManager {
 
     // Initialize the DBManager
@@ -105,6 +106,7 @@ class DBManager {
         }
     }
 
+    // Disconnecting from the database
     async disconnect()
     {
         await this.connection.end;
