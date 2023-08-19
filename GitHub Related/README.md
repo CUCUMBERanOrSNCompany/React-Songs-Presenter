@@ -30,7 +30,7 @@ And that's it! (I hope)
    
    password: '', (No Password)
 
-   Alternatively, modify _Backend/Entities/DBConfig.js with your credentials_.
+   Alternatively, modify _Backend/Entities/DBConfig.js_ with your credentials.
 
 
 2. Run main:
