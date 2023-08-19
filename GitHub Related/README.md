@@ -57,12 +57,15 @@ And that's it! (I hope)
 
 
 3. Once the server is running, you can start the Frontend side by doing the following:
+
    
-   3.1. Change the terminal path to Frontend/view
+4. Change the terminal path to Frontend/view
+
    
-   3.2. Run the following command: npm start
+5. Run the following command: npm start
    
-    3.2.1. If prompt to use a different port, please press yes.
+    5.1. If prompt to use a different port, please press yes.
+
 
 
 Please feel free to reach out with any questions!
