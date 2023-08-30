@@ -1,4 +1,4 @@
-# TO2Assignment
+# React Songs Presenter
 
 
 <img width="1440" alt="Screenshot 2023-08-19 at 15 07 24" src="https://github.com/CUCUMBERanOrSNCompany/TO2Assignment/assets/70776104/23eb3486-85f5-4ca1-ab53-201dada21bda">
@@ -9,7 +9,13 @@
 
 
 
-Thank you for the opportunity! I am pleased to present my home assignment for Thing Or Two.
+This project was originally my assignment for a Full-Stack Position (React/JS/SQL). It qualified me to a final interview at the company.
+
+The project consists of a:
+1. File reader
+2. SQL Database that stores the content of the file in a table.
+3. A Server that sends HTTP GET requests to an API and present the SQL Table in a web page.
+
 
 # Required installations:
 
